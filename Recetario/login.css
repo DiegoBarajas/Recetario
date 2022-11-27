@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#arriba{
+    width: 100%;
+    height: 10%;
+    float: left;  
+    background-color: #C8A2C8;  
+}
+
+#izquierda{
+    width: 15%;
+    height: 80%;
+    float: left;  
+    background-color: #C8A2C8;  
+}
+
+main{
+    width: 70%;
+    height: 80%;
+    float: left;
+    background-color: #C8A2C8;
+}
+    #login{
+        width: 60%;
+        height: 80%;
+        float: left;
+        background-color: #FCB7AF;
+        margin-top: 50px;
+        margin-left: 180px;
+        font-family: arial;
+        border-radius: 50px;
+        align-items: center;
+    }
+
+#derecha{
+    
+        width: 15%;
+        height: 80%;
+        float: left;
+        background-color: #C8A2C8;
+       
+    
+}
+
+#abajo{
+    width: 100%;
+    height: 10%;
+    float: left;
+    background-color: #C8A2C8;
+    
+}
+
+h1{
+    margin-top: 30px;
+    margin-left: 212px;
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+label{
+    margin-left: 130px;
+}
+
+input{
+    margin-left: 130px;
+    width: 50%;
+}
+
+#enviar{
+    margin-left: 225px;
+    width: 14%;
+    border-radius: 5px;
+}
+#correo{
+    border-radius: 7px;
+    background-color: #afddfc;
+    height: 3%; 
+    width: 50%;
+}
+#nombre{
+    border-radius: 7px;
+    background-color: #afddfc;
+    height: 3%; 
+    width: 50%;
+}
+#contra{
+    border-radius: 7px;
+    background-color: #afddfc;
+    height: 3%; 
+    width: 50%;
+}
+#contre_re{
+    border-radius: 7px;
+    background-color: #afddfc;
+    height: 3%; 
+    width: 50%;
+}
+.enviar{
+    
+       
+        color: black;
+        transition: transform 0.15s;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #C8A2C8;
+        border-radius: 20px;
+        
+
+}

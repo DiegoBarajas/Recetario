@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>login</title>
+            <link rel="stylesheet" href="estilo.css">
+            <link rel="stylesheet" href="login.css">
+            <link rel="shortcut icon" href="/imagenes/Logotipo.png" type="image/*">
+
+        </head>
+        <body>
+            <section id="arriba"></section>           
+            <section id="izquierda"></section>
+            <main>
+                <form id="login" action="login.php" method="post">
+                    <h1>Registrarse</h1>
+                    <br>
+                    <br>
+                    <label for="Correo" >Correo</label>
+                    <br>
+                    <input type="email" name="correo" id="correo" placeholder="example@tamal.com">
+                    <br>
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" name="nombre" id="nombre" placeholder="Karen Page">
+                    <br>
+                    <br>
+                    <label for="Contra">Contraseña</label>
+                    <br>
+                    <input type="password" name="password" id="contra" placeholder="crea una contraseña" required minlength="6">
+                    <br>
+                    <br>
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <br>
+                    <input type="password" name="re_password" id="contre_re" required minlength="6">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar" id="enviar">
+                </form>
+            </main>
+            <section id="derecha"></section>
+            <section id="abajo"></section>
+        </body>
+    </html>
