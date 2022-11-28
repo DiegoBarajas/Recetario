@@ -1,9 +1,29 @@
+<?php
+
+    require_once("db/conexion.php");
+    session_start();
+
+    if(!isset($_SESSION['id'])){
+        header("Location: /inicio_sesion.html");
+    }
+
+    $id = $_SESSION['id'];
+    $sql = "SELECT * FROM usuario WHERE id='$id'";
+    $res = $c->query($sql);
+    $row = $res->fetch_array();
+
+    $nombre = $row['nombre'];
+    $correo = $row['correo'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Perfil</title>
+        <link rel="stylesheet" href="estilo.css">
         <link rel="stylesheet" href="perfil.css">
         <link rel="shortcut icon" href="/imagenes/Logotipo.png" type="image/*">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -14,7 +34,7 @@
         <header>
             <section id="barra-grande">
                 <section id="logo">
-                    <img src="/imagenes/Logotipo.png" id="img-logo">
+                    <img src="imagenes/Logotipo.png" id="img-logo">
                 </section>
                 <nav id="barra">
                     <input type="search" name="barra-bu" id="barra-bu" >
@@ -40,19 +60,23 @@
                    <br>
                    <br>
                    <p id="miperfil">Mi perfil</p>
-                   <img  id="usuario" src="imagenes/user.jpg">
+                  
                    <ul>
                    
                     <form action="">
                         <br>
                         <p id="nom">Nombre</p>
                         <br>
-                        <input type="text" placeholder="Gatolunar777" id="Inom">
+                        <input type="text" value="<?php echo $nombre ?>" placeholder="Gatolunar777" id="Inom" readonly>
                         <br>
                         <p id="corr">Correo</p>
                         <br>
-                        <input type="text" placeholder="example@tamal.com" id="Icorr">
+                        <input type="text" value="<?php echo $correo ?>" placeholder="example@tamal.com" id="Icorr" readonly>
                     </form>   
+                    <br>
+                    <a href="Inicio.php"><button id="regresar">Regresar al inicio</button></a>
+                    <br>
+                    <br>
                 </section>
             </article>
         </main>

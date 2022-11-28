@@ -182,6 +182,10 @@ main{
     flex: auto;
     margin-right:7%;
     border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #ingre{
     background-color: #e992d3;
@@ -311,3 +315,10 @@ main{
         #correo:hover{
             color: #FCB7AF;
         }
+
+
+.img-rece{
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+}

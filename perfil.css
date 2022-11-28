@@ -101,7 +101,9 @@ main{
     height: 110%;
     float: left;
 }
-
+#miperfil{
+    text-align: center;
+}
 #contenido{
     width: 92%;
     min-height: 70%;

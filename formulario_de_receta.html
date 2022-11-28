@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Formulario de receta</title>
+        <link rel="stylesheet" href="estilo.css">
         <link rel="stylesheet" href="formulario_de_receta.css">
         <link rel="shortcut icon" href="/imagenes/Logotipo.png" type="image/*">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -14,32 +15,23 @@
                     <h3>Doña Lucha</h3>
                 </nav>
                 <nav class="select-categorias">
-                    <a href="">Comida salada</a>
+                    <a href="Inicio.html">Inicio</a>
                 </nav>
                 <nav class="select-categorias">
-                    <a href="">Comida dulce</a>
+                    <a href="formulario_de_receta.html">Agregar receta</a>
                 </nav>
                 <nav class="select-categorias">
-                    <a href="">Bebidas</a>
+                    <a href="perfil.html">Perfil</a>
                 </nav>
-                <nav class="select-categorias">
-                    <a href="">Postres</a>
-                </nav>
-                <nav class="select-categorias">
-                    <a href="">Sopas</a>
-                </nav>
-                <nav class="select-categorias">
-                    <a href="">Ensaladas</a>
-                </nav>
-                <nav class="select-categorias">
-                    <a href="">Con pocos ingredientes</a>
+                <nav>
+                    <a href="logout.php"><button id="cerrar">Cerrar sesion</button></a>
                 </nav>
             </nav>
         </section>   
         <header>
             <section id="barra-grande">
                 <section id="logo">
-                    <img src="/imagenes/Logotipo.png" id="img-logo">
+                    <img src="imagenes/Logotipo.png" id="img-logo">
                 </section>
                 <nav id="barra">
                     <input type="search" name="barra-bu" id="barra-bu" >
@@ -49,23 +41,27 @@
                 </nav>
             </section>               
             <nav id="usuario">
-                    <img src="/imagenes/user.jpg" id="user-img">
+                    <img src="imagenes/user.jpg" id="user-img">
             </nav>
         </header>
         <main>
+            <form action="subir-receta.php" method="post" enctype="multipart/form-data">
             <article id="contenido">
                 <section class="info">
                     <section>
-                        <p class="nom" id="p1">Nombre de la receta</p> <input type="text" placeholder="Galletas de animalito" id="I1">
-                        <p class="cate" id="p2">Categoria</p> <input type="text" placeholder="Comida salada" id="I2">
-                        <p class="ingre" id="p3">Ingredientes</p> <input type="text" placeholder="Huevito" id="I3">
-                        <p class="ima" id="p4">Imagen</p> <input type="image" id="I4">
+                        <p class="nom" id="p1">Nombre de la receta</p> <input type="text" name="nombre" placeholder="Galletas de animalito" id="I1" required>
+                        <p class="ingre" id="p3">Ingredientes</p> <input type="text" name="ingredientes" placeholder="Huevito" id="I3" required>
+                        <p class="ima" id="p4">Imagen</p> <input type="file" name="imagen" accept="jpeg/*" id="I4" required>
+                        <br><br>
                     </section>
                 </section>
                 <section class="proce">
-                    <p id="p5">Procedimiento</p> <input type="text" id="I5">
+                    <p id="p5">Procedimiento</p> <textarea type="text" name="procedimiento" id="I5" cols="30" rows="15" required></textarea><br><br>
+                    <input type="submit" value="Subir" id="p1"><br>
+                    <br>
                 </section>
             </article>
+            </form>
         </main>
         
         <footer>

@@ -15,7 +15,7 @@
 
         if(password_verify($password, $row['password'])){
             $_SESSION['id'] = $row['id'];
-            header("Location: index.php");
+            header("Location: Inicio.php");
 
         }else{
             echo "Contraseña incorrecta";
