@@ -31,13 +31,13 @@
                 <h3>Doña Lucha</h3>
             </nav>
             <nav class="select-categorias">
-                <a href="Inicio.html">Inicio</a>
+                <a href="Inicio.php">Inicio</a>
             </nav>
             <nav class="select-categorias">
                 <a href="formulario_de_receta.html">Agregar receta</a>
             </nav>
             <nav class="select-categorias">
-                <a href="perfil.html">Perfil</a>
+                <a href="perfil.php">Perfil</a>
             </nav>
             <nav>
                 <a href="logout.php"><button id="cerrar">Cerrar sesion</button></a>
