@@ -110,7 +110,9 @@ header{
     font-size: 100%;
     font-weight:600;
 }
-
+#nombre{
+    font-family: 'Courier New', Courier, monospace;
+}
 #usuario{
     width: 10%;
     height: 100%;
@@ -118,17 +120,13 @@ header{
     text-align: center;
 } 
 
-#user-img{
-    width: 50px;
-    height: auto;
-    border-radius: 50%;
-    margin-top: 13px;                  
-}
 
 main{
     width: 80%;
-    height: 90vh;
-    float: left;   
+    height: auto;
+    float: left;
+    z-index: 1;
+       
 }
 
 #comidas{
@@ -139,6 +137,8 @@ main{
     margin: auto;
     margin-top: 30px;
     border-radius: 30px;
+    height: max-content;
+   
 }
 
 #comida-1{
@@ -184,10 +184,11 @@ main{
 }
 
 .fotos-comida{
-    width: 70%;
-    height: 60%;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     margin-top: 30px;
+    object-fit: cover;
 } 
 
 
@@ -196,8 +197,10 @@ main{
             width: 100%;
             height: 40%;
             float: left;
+            margin-top: 20px;
             background-color: red;
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            z-index: 2;
         }
         
 

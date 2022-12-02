@@ -51,7 +51,7 @@
                     </nav>
                 </section>               
                 <nav id="usuario">
-                        <img src="imagenes/user.jpg" id="user-img">
+                        
                 </nav>
             </header>  
             <main>
@@ -67,7 +67,7 @@
                             <img src="/img-receta.php?id=<?php echo $row['id'] ?>" class="fotos-comida">
                             <br>
                             <br>
-                            <a href="visualizacion.php?id=<?php echo $row['id'] ?>"comida-a"><?php echo $row['nombre']?></a>
+                            <a class="nombre" href="visualizacion.php?id=<?php echo $row['id'] ?>"comida-a"><?php echo $row['nombre']?></a>
                         </nav>
 
                 <?php
@@ -88,14 +88,14 @@
                         <ul>
                             <li><a href="" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="" class="instagram"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://twitter.com/Donialuchaa" class="twitter"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
                         </ul>                                                     
                     </section>
                 </section>                
                 <section id="Quejas">
                     <p id="que">Quejas y sugerencias marcar al:</p>
-                    <p>3322230894 <br> o <br> al Correo:  <br> <a href="mailto:" id="correo">JJAJAJAJ@kdhjdjsjd.com</a></p>
+                    <p>3318343468 <br> o <br> al Correo:  <br> <a href="mailto:" id="correo">El_recetario_de_donia_lucha@gmail.com</a></p>
                 </section>
                 <section id="copi">
                     <p>© Copyrihgt, comida </p>
